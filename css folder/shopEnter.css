@@ -1,0 +1,255 @@
+
+*{
+
+      margin: 0;
+    padding:0;
+    box-sizing: border-box;
+background-color:#C8EDFF;
+}
+
+
+
+#candyShop img{
+ 
+    background-repeat: no-repeat;
+        object-fit: contain;
+    width: 100%;
+    height:100vh;
+
+    position: relative;
+  
+   
+
+}
+
+#duoImage {
+    position: absolute;
+    width: 500px;
+    height: 600px;
+    right: 18%;
+    bottom: 1%;
+    opacity: 0;
+       background-size: contain;
+       background-repeat: no-repeat;
+
+background-color: transparent;
+background-color: transparent;
+
+     background-image: url('../images/Candy\ Shop\ Welcome\ Duo.png');
+     transition: opacity 1.5s ease-in-out;
+}
+
+
+#boyImage {
+    position: absolute;
+    width: 170px;
+    height: 480px;
+    left: 22%;
+    bottom: 6%;
+    opacity: 1;
+    transform: translateX(-150px);
+     overflow: hidden;
+     background-image: url('../images/Cheerful\ Boy\ Walking\ with\ Backpack.png');
+     transition: opacity 0.6s ease-in-out;
+     background-color: transparent;
+}
+
+.boy-sprite {
+    width: 170px;
+    height: 480px;
+    background-image: url('../images/sprite\ image.png');
+    background-repeat: no-repeat;
+    background-size: 1440px 480px;
+    background-position: 0 0;
+    background-color: transparent;
+    
+}
+
+
+ #boyImage.walking {
+    opacity: 1;
+    animation: enterShop 12s linear forwards;
+} 
+
+#boyImage.walking .boy-sprite {
+    animation: walkingFrames 1.2s steps(8) infinite;
+}
+
+@keyframes walkingFrames {
+    from {
+        background-position: 0 0;
+    }
+
+    to {
+        background-position: -1440px 0;
+    }
+}
+
+@keyframes enterShop {
+    from {
+        transform: translateX(-150px);
+    }
+
+    to {
+        transform: translateX(800px);
+    }
+}
+
+
+/* speechbubble shopkeeper */
+
+.speechBubble{
+
+    position: absolute;
+      background-color:#fffdf5;
+    color: black;
+    border: 3px solid black;
+    border-radius: 35%;
+    padding: 20px;
+    width: 220px;
+    height:110px;
+    text-align: center;
+    font-weight: bold;
+right:26%;
+    top:56%;
+    font-size: 17px;
+     opacity: 0;
+      transition: opacity 0.6s ease-in-out;
+
+}
+
+ 
+
+.speechBubble::after {
+  content:'';
+    position: absolute;
+
+    width: 45px;
+    height: 35px;
+
+    background-color: #fffdf5;
+
+    border-right: 3px solid black;
+    border-bottom: 3px solid black;
+
+    border-radius: 0 0 100% 0;
+
+    bottom: -14px;
+    right: -22px;
+
+    transform: rotate(36deg);
+    opacity:1;
+}
+
+
+/* speechBubble boy when saw candies */
+
+.speechBubbleboy{
+
+    position: absolute;
+      background-color:#fffdf5;
+    color: black;
+    border: 3px solid black;
+    border-radius: 35%;
+    padding: 20px;
+    width: 220px;
+    height:100px;
+    text-align: center;
+    font-weight: bold;
+left:22%;
+    top:67%;
+    font-size: 17px;
+     opacity: 0;
+      transition: opacity 0.6s ease-in-out;
+
+}
+
+ 
+
+.speechBubbleboy::after {
+  content:'';
+    position: absolute;
+
+    width: 25px;
+    height: 25px;
+
+    background-color: #fffdf5;
+
+ 
+    border-bottom: 3px solid black;
+
+    border-radius: 0 0 100% 0;
+
+    bottom: 12px;
+    left: -5px;
+
+    transform: rotate(45deg);
+    
+}
+
+/* boy speechbubble donot have money */
+
+.boyVoiceDuoConversationBubble{
+
+    position: absolute;
+      background-color:white;
+    color: black;
+    border: 3px solid black;
+    border-radius: 35%;
+    padding: 20px;
+    width: 190px;
+    height:100px;
+    text-align: center;
+    font-weight: bold;
+left:68%;
+    top:66%;
+    font-size: 17px;
+     opacity: 0;
+      transition: opacity 0.6s ease-in-out;
+
+}
+
+/* speechbubble for shopkeeper no problem knowledge money. */
+ 
+.speechBubbleShopkeeperDuoConversation{
+
+    position: absolute;
+      background-color:#fffdf5;
+    color: black;
+    border: 3px solid black;
+    border-radius: 35%;
+    padding: 18px;
+    width: 220px;
+    height:110px;
+    text-align: center;
+    font-weight: bold;
+right:26%;
+    top:56%;
+    font-size: 17px;
+     opacity: 0;
+      transition: opacity 0.6s ease-in-out;
+
+}
+
+ 
+
+.speechBubbleShopkeeperDuoConversation::after {
+  content:'';
+    position: absolute;
+
+    width: 45px;
+    height: 35px;
+
+    background-color: #fffdf5;
+
+    border-right: 3px solid black;
+    border-bottom: 3px solid black;
+
+    border-radius: 0 0 100% 0;
+
+    bottom: -14px;
+    right: -22px;
+
+    transform: rotate(36deg);
+    opacity:1;
+}
