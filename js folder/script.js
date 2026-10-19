@@ -144,15 +144,22 @@ boyQuizImage.style.opacity=0;
     setTimeout(() => {
       speechBubbleShopkeeperDuoConversation.style.opacity = 0;
       duoImage.style.opacity=0;
+playRound();
+        }, 5000);
 
-        }, 6000);
 
+        function playRound() {
+ boyQuizImage.style.opacity=0;
+      speechBubbleboyQuizImage.style.opacity = 0;
+       boyThinkingImage.style.opacity=0;
+
+    nextQuestions();
      setTimeout(() => {
             shopkeeperImage.style.opacity = 1;
               mathQuestions.style.opacity = 1;
            
           scoreboard.style.opacity=1;
-  }, 8000);
+  }, 7000);
 
            setTimeout(() => {
              boyThinkingImage.style.opacity=0;
@@ -160,32 +167,34 @@ boyQuizImage.style.opacity=0;
                  boyQuizImage.style.opacity=1;
                 
                 speechBubbleboyQuizImage.style.opacity = 1;
-                 nextQuestions();
-                
-            }, 15000);
+              
+            }, 12000);
 
             setTimeout(()=>{
  boyThinkingImage.style.opacity=1;
 
-            },11000)
+            },9000)
 
             setTimeout(()=>{
 
   collectPoints();
-            },16000)
+            },14000)
 
+      setTimeout(() => {
+    playRound();
+}, 19000);
       
-        
-  
- 
+
           }
 
   
+  }
 }
+     
 
 //Creating an object from  class
 
-const boyObj = new Charachter("Ankit", "female");
+const boyObj = new Charachter();
 
 if (document.querySelector("#boyImage")) {
   boyObj.speechBubbleLittleBoy();

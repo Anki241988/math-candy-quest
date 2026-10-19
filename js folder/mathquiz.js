@@ -2,7 +2,7 @@ const boyQuizImage = document.querySelector('#boyQuizImage')
 const shopkeeperImage=document.querySelector('#shopkeeperImage')
 const boyThinkingImage=document.querySelector('#boyThinkingImage')
 const scoreboard=document.querySelector('#scoreboard')
-const score=document.querySelector('#score')
+const scoreElement=document.querySelector('#score')
 const questionText=document.querySelector('#questionText')
 const speechBubbleboyQuizImage=document.querySelector('#speechBubbleboyQuizImage')
 const answerText=document.querySelector('#answerText')
@@ -16,18 +16,18 @@ answerText.textContent= randomQuestions.Answer;
 //boy answer question
 
 
-
-function collectPoints(){
 let score=0;
+function collectPoints(){
+
 score++
-document.querySelector('#score').textContent=score;
+scoreElement.textContent=score;
 if(score%5===0){
+setTimeout(()=>{
+ alert("🍭 Bonus! Giant candy floss!");
+},500)
 
-  console.log("🍭 Bonus! Giant candy floss!");
 }
-
 }
-console.log(score)
 
 
 function nextQuestions(){
