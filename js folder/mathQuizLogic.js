@@ -37,7 +37,7 @@ switch (operator) {
     break;
 
   case "/":
-correctAnswer = num1/num2;
+correctAnswer = Number((num1 / num2).toFixed(2));
     break;
 
   default:

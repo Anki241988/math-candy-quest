@@ -57,7 +57,10 @@ class Charachter {
       boyWalking.style.opacity = 0;
 
 shopkeeperImage.style.opacity=0;
+boyQuizImage.style.opacity=0;
  mathQuestions.style.opacity=0;
+   speechBubbleboyQuizImage.style.opacity=0;
+    boyThinkingImage.style.opacity=0;
       setTimeout(() => {
         duoImage.style.opacity = 1;
       }, 300);
@@ -78,7 +81,10 @@ shopkeeperImage.style.opacity=0;
         "Welcome to my candy shop, little boy! Which candy would you like to buy?";
         shopkeeperImage.style.opacity=0;
          mathQuestions.style.opacity=0;
+           speechBubbleboyQuizImage.style.opacity=0;
+         boyQuizImage.style.opacity=0;
       speechBubble.style.opacity = 1;
+       boyThinkingImage.style.opacity=0;
     }, 800);
 
     setTimeout(() => {
@@ -93,7 +99,10 @@ shopkeeperImage.style.opacity=0;
       "Wow! So many candies! I want some too!” 🍬🍭";
     speechBubbleboy.style.opacity = 1;
     shopkeeperImage.style.opacity=0;
+    boyQuizImage.style.opacity=0;
      mathQuestions.style.opacity=0;
+       speechBubbleboyQuizImage.style.opacity=0;
+        boyThinkingImage.style.opacity=0;
     this.cartoonVoice();
 
     setTimeout(() => {
@@ -114,7 +123,10 @@ shopkeeperImage.style.opacity=0;
     boyVoiceDuoConversationBubble.style.opacity = 1;
     speechBubbleboy.style.opacity = 0;
     shopkeeperImage.style.opacity=0;
+    boyQuizImage.style.opacity=0;
     mathQuestions.style.opacity=0;
+     speechBubbleboyQuizImage.style.opacity=0;
+      boyThinkingImage.style.opacity=0;
     boyVoiceDuoConversation.play();
 
     boyVoiceDuoConversation.addEventListener("ended", () => {
@@ -135,8 +147,18 @@ shopkeeperImage.style.opacity=0;
       duoImage.style.opacity=0;
      setTimeout(() => {
             shopkeeperImage.style.opacity = 1;
+            boyThinkingImage.style.opacity=1;
             mathQuestions.style.opacity = 1;
-        }, 2500);
+
+
+           setTimeout(() => {
+             boyThinkingImage.style.opacity=0;
+                speechBubbleboyQuizImage.style.opacity = 1;
+                 boyQuizImage.style.opacity=1;
+                
+            }, 4000);
+
+        }, 3500);
         
     }, 7500);
  
