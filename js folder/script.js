@@ -30,13 +30,8 @@ if (backgroundMusic) {
 // create objects(boy,shopkeeper etc...)from class oop
 
 class Charachter {
-  constructor(name, gender, image, candies, dialogBox, collectedCandy) {
-    this.gender = gender;
-    this.name = name;
-    this.image = image;
-    this.candies = candies;
-    this.dialogBox = dialogBox;
-    this.collectedCandy = collectedCandy;
+  constructor() {
+   
   }
 
   //boy voice when saw candies in the shop.
@@ -61,6 +56,7 @@ boyQuizImage.style.opacity=0;
  mathQuestions.style.opacity=0;
    speechBubbleboyQuizImage.style.opacity=0;
     boyThinkingImage.style.opacity=0;
+    scoreboard.style.opacity=0;
       setTimeout(() => {
         duoImage.style.opacity = 1;
       }, 300);
@@ -85,6 +81,7 @@ boyQuizImage.style.opacity=0;
          boyQuizImage.style.opacity=0;
       speechBubble.style.opacity = 1;
        boyThinkingImage.style.opacity=0;
+       scoreboard.style.opacity=0;
     }, 800);
 
     setTimeout(() => {
@@ -103,6 +100,7 @@ boyQuizImage.style.opacity=0;
      mathQuestions.style.opacity=0;
        speechBubbleboyQuizImage.style.opacity=0;
         boyThinkingImage.style.opacity=0;
+        scoreboard.style.opacity=0;
     this.cartoonVoice();
 
     setTimeout(() => {
@@ -110,8 +108,8 @@ boyQuizImage.style.opacity=0;
 
       setTimeout(() => {
         this.walk();
-      }, 600);
-    }, 3000);
+      }, 700);
+    }, 4500);
   }
 
   //speech bubbles when boy ask for candy and say don't have money,shopkeeper reply answer math questions.
@@ -127,6 +125,7 @@ boyQuizImage.style.opacity=0;
     mathQuestions.style.opacity=0;
      speechBubbleboyQuizImage.style.opacity=0;
       boyThinkingImage.style.opacity=0;
+      scoreboard.style.opacity=0;
     boyVoiceDuoConversation.play();
 
     boyVoiceDuoConversation.addEventListener("ended", () => {
@@ -145,24 +144,41 @@ boyQuizImage.style.opacity=0;
     setTimeout(() => {
       speechBubbleShopkeeperDuoConversation.style.opacity = 0;
       duoImage.style.opacity=0;
+
+        }, 6000);
+
      setTimeout(() => {
             shopkeeperImage.style.opacity = 1;
-            boyThinkingImage.style.opacity=1;
-            mathQuestions.style.opacity = 1;
-
+              mathQuestions.style.opacity = 1;
+           
+          scoreboard.style.opacity=1;
+  }, 8000);
 
            setTimeout(() => {
              boyThinkingImage.style.opacity=0;
-                speechBubbleboyQuizImage.style.opacity = 1;
+               
                  boyQuizImage.style.opacity=1;
                 
-            }, 4000);
+                speechBubbleboyQuizImage.style.opacity = 1;
+                 nextQuestions();
+                
+            }, 15000);
 
-        }, 3500);
+            setTimeout(()=>{
+ boyThinkingImage.style.opacity=1;
+
+            },11000)
+
+            setTimeout(()=>{
+
+  collectPoints();
+            },16000)
+
+      
         
-    }, 7500);
+  
  
-  }
+          }
 
   
 }

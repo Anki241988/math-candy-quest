@@ -119,3 +119,20 @@ left:22%;
 
 
 }
+
+#scoreboard{
+    position:absolute;
+ width:240px;
+ padding: 9px;
+    height:auto;
+   text-align: center;
+     background-color: #FFF1A8;
+    color: #8B3D70;
+    border: 2px solid #D94F91;
+    border-radius: 18px;
+  bottom:780px;
+    font-size: 36px;
+    left:220px;
+    font-weight: bold;
+}
+
