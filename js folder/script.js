@@ -39,9 +39,13 @@ class Charachter {
   }
 
   walk() {
-    this.walking = true;
+
+    // Boy is standing
+    this.walking = false;
 
     setTimeout(() => {
+      // Boy starts walking
+      this.walking=true;
       boyWalking.classList.add("walking");
     }, 1000);
 
