@@ -63,6 +63,7 @@ display:inline-block;
     left: 12%;
     bottom: 6%;
     opacity: 1;
+  
 }
 
 #speechBubbleboyQuizImage{
@@ -81,7 +82,7 @@ left:22%;
     top:62%;
     font-size: 17px;
      opacity: 0;
-      transition: opacity 2s ease-in-out;
+   
 
 }
 
@@ -136,3 +137,14 @@ left:22%;
     font-weight: bold;
 }
 
+
+#candyFlossImage {
+    position: fixed;
+    width: 1500px;
+    height: auto;
+   left:30%;
+   top:1%;
+    bottom: 5%;
+    opacity: 0;
+    transition: opacity 2.5s ease-in-out;
+}

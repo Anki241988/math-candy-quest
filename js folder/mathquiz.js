@@ -7,7 +7,8 @@ const questionText=document.querySelector('#questionText')
 const speechBubbleboyQuizImage=document.querySelector('#speechBubbleboyQuizImage')
 const answerText=document.querySelector('#answerText')
 const mathQuestions = document.querySelector('#mathQuestions')
-
+const candyFlossImage=document.querySelector('#candyFlossImage')
+const tryAgain=document.querySelector('#tryAgain')
 const randomQuestions=Mathquiz()
 questionText.textContent=randomQuestions.Question
 answerText.textContent= randomQuestions.Answer;
@@ -17,17 +18,31 @@ answerText.textContent= randomQuestions.Answer;
 
 
 let score=0;
+let gameOver=false;
 function collectPoints(){
 
 score++
 scoreElement.textContent=score;
 if(score%5===0){
-setTimeout(()=>{
- alert("🍭 Bonus! Giant candy floss!");
-},500)
+    gameOver=true;
+
+victoryMusic.play();
+candyFlossImage.style.opacity=1;
+ speechBubbleboyQuizImage.style.opacity = 0;
+                 boyQuizImage.style.opacity=0;
+shopkeeperImage.style.opacity = 0;
+              mathQuestions.style.opacity = 0;
+               setTimeout(() => {
+        window.location.href = "./endGame.html";
+    }, 6000);
+
 
 }
 }
+
+
+
+
 
 
 function nextQuestions(){

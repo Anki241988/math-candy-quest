@@ -57,6 +57,7 @@ boyQuizImage.style.opacity=0;
    speechBubbleboyQuizImage.style.opacity=0;
     boyThinkingImage.style.opacity=0;
     scoreboard.style.opacity=0;
+           candyFlossImage.style.opacity=0;
       setTimeout(() => {
         duoImage.style.opacity = 1;
       }, 300);
@@ -82,6 +83,7 @@ boyQuizImage.style.opacity=0;
       speechBubble.style.opacity = 1;
        boyThinkingImage.style.opacity=0;
        scoreboard.style.opacity=0;
+              candyFlossImage.style.opacity=0;
     }, 800);
 
     setTimeout(() => {
@@ -101,6 +103,7 @@ boyQuizImage.style.opacity=0;
        speechBubbleboyQuizImage.style.opacity=0;
         boyThinkingImage.style.opacity=0;
         scoreboard.style.opacity=0;
+               candyFlossImage.style.opacity=0;
     this.cartoonVoice();
 
     setTimeout(() => {
@@ -126,6 +129,7 @@ boyQuizImage.style.opacity=0;
      speechBubbleboyQuizImage.style.opacity=0;
       boyThinkingImage.style.opacity=0;
       scoreboard.style.opacity=0;
+             candyFlossImage.style.opacity=0;
     boyVoiceDuoConversation.play();
 
     boyVoiceDuoConversation.addEventListener("ended", () => {
@@ -139,41 +143,46 @@ boyQuizImage.style.opacity=0;
 
     speechBubbleShopkeeperDuoConversation.style.opacity = 1;
     boyVoiceDuoConversationBubble.style.opacity = 0;
+           candyFlossImage.style.opacity=0;
     speechBubbleShopkeeperDuoConversationVoice.play();
 
     setTimeout(() => {
       speechBubbleShopkeeperDuoConversation.style.opacity = 0;
       duoImage.style.opacity=0;
+             candyFlossImage.style.opacity=0;
 playRound();
-        }, 5000);
+        }, 7500);
 
 
         function playRound() {
  boyQuizImage.style.opacity=0;
       speechBubbleboyQuizImage.style.opacity = 0;
        boyThinkingImage.style.opacity=0;
+              candyFlossImage.style.opacity=0;
 
     nextQuestions();
      setTimeout(() => {
             shopkeeperImage.style.opacity = 1;
               mathQuestions.style.opacity = 1;
+                     candyFlossImage.style.opacity=0;
            
           scoreboard.style.opacity=1;
-  }, 7000);
+  }, 2000);
 
            setTimeout(() => {
              boyThinkingImage.style.opacity=0;
-               
+               speechBubbleboyQuizImage.style.opacity = 1;
                  boyQuizImage.style.opacity=1;
+                 candyFlossImage.style.opacity=0;
                 
-                speechBubbleboyQuizImage.style.opacity = 1;
+                
               
             }, 12000);
 
             setTimeout(()=>{
  boyThinkingImage.style.opacity=1;
 
-            },9000)
+            },2500)
 
             setTimeout(()=>{
 
