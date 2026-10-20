@@ -1,77 +1,96 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kid enter Shop</title>
-    <link rel="stylesheet" href="../css folder/style.css">
-    <link rel="stylesheet" href="../css folder/shopEnter.css">
-    <link rel="stylesheet" href="../css folder/quizQuestions.css">
-</head>
-<body>
+    <link rel="stylesheet" href="../css folder/style.css" />
+    <link rel="stylesheet" href="../css folder/shopEnter.css" />
+    <link rel="stylesheet" href="../css folder/quizQuestions.css" />
+  </head>
+  <body>
     <div id="candyShop">
-        <img src="../images/candyshop.png">
-        
-  
+      <img src="../images/candyshop.png" />
 
-    <div id="boyImage"> 
+      <div id="boyImage">
+        <audio id="boyVoice" src="../audios/boy saw candy.ogg"></audio>
 
-       <audio id="boyVoice" src="../audios/boy saw candy.ogg"></audio>
-    
         <div class="boy-sprite"></div>
-   
-</div>
-     <div id="duoImage" >
-        <audio id="shopkeeperVoice" src="../audios/shopkeeper welcome in shop.ogg"></audio>
+      </div>
+      <div id="duoImage">
+        <audio
+          id="shopkeeperVoice"
+          src="../audios/shopkeeper welcome in shop.ogg"
+        ></audio>
 
-        <audio id="boyVoiceDuoConversation" src="../audios/boy conversation with shopkeeper.ogg"></audio>
+        <audio
+          id="boyVoiceDuoConversation"
+          src="../audios/boy conversation with shopkeeper.ogg"
+        ></audio>
 
-         <audio id="speechBubbleShopkeeperDuoConversationVoice" src="../audios/no problem shopkeeper voice.ogg"></audio>
-        </div>
+        <audio
+          id="speechBubbleShopkeeperDuoConversationVoice"
+          src="../audios/no problem shopkeeper voice.ogg"
+        ></audio>
+      </div>
 
-        <audio id="backgroundMusic" src="../audios/candy-shop-background.wav" controls loop ></audio>
+      <audio
+        id="backgroundMusic"
+        src="../audios/candy-shop-background.wav"
+        controls
+        loop
+      ></audio>
 
- <audio id="victoryMusic" src="../audios/math_candy_quest_super_happy_victory.wav"></audio>
-  
+      <audio
+        id="victoryMusic"
+        src="../audios/math_candy_quest_super_happy_victory.wav"
+      ></audio>
+    </div>
 
- </div>
+    <div id="shopkeeperImage">
+      <img src="../images/Cheerful Striped Apron Candy Chef.png" />
+    </div>
 
+    <div id="boyThinkingImage">
+      <img src="../images/Thoughtful Boy with Maths Bubble.png" />
+    </div>
 
- <div id="shopkeeperImage">
-    <img src="../images/Cheerful Striped Apron Candy Chef.png">
- </div>
+    <div id="boyQuizImage">
+      <img src="../images/Cheerful Boy’s Bright Idea.png" />
+    </div>
 
- <div id="boyThinkingImage">
-    <img src="../images/Thoughtful Boy with Maths Bubble.png">
- </div>
+    <div id="candyFlossImage">
+      <img src="../images/Cheerful Boy with Giant Cotton Candy.png" />
+    </div>
 
-  <div id="boyQuizImage">
-    <img src="../images/Cheerful Boy’s Bright Idea.png">
-   </div>
+    <div class="speechBubble">
+      Welcome to my candy shop, little boy! Which candy would you like to buy?
+    </div>
+    <div class="speechBubbleboy">
+      “Wow! So many candies! I want some too!” 🍬🍭
+    </div>
+    <div class="boyVoiceDuoConversationBubble">
+      I want a candy,but i don't have any money.
+    </div>
+    <div class="speechBubbleShopkeeperDuoConversation">
+      "No problem! Knowledge is money! Answer my math questions to get candy!"
+    </div>
 
-<div id="candyFlossImage">
+    <div id="mathQuestions">
+      <div class="questionBlock">
+        🍭 KNOWLEDGE IS MONEY! Answer to win candy!
+      </div>
+      <span id="questionText"></span> 🍬
+    </div>
 
-    <img src="../images/Cheerful Boy with Giant Cotton Candy.png">
-</div>
+    <div id="speechBubbleboyQuizImage">
+      <span>I got it!💡</span> <span id="answerText"></span>
+    </div>
 
+    <div id="scoreboard">🍬 Points: <span id="score">0</span></div>
 
-
-
-
- <div class="speechBubble">Welcome to my candy shop, little boy! Which candy would you like to buy? </div>
- <div class="speechBubbleboy">“Wow! So many candies! I want some too!” 🍬🍭 </div>
- <div class="boyVoiceDuoConversationBubble">I want a candy,but i don't have any money. </div>
- <div class=" speechBubbleShopkeeperDuoConversation"> "No problem! Knowledge is money! Answer my math questions to get candy!"</div>
-
- <div id="mathQuestions"><div class="questionBlock">🍭 KNOWLEDGE IS MONEY! Answer to win candy!</div> <span id="questionText"></span> 🍬</div>
-   
-<div id="speechBubbleboyQuizImage"><span>I got it!💡</span> <span id='answerText'></span></div>
-
-<div id="scoreboard">🍬 Points: <span id="score">0</span></div>
-
-     <script src="../js folder/mathQuizLogic.js"></script>
+    <script src="../js folder/mathQuizLogic.js"></script>
     <script src="../js folder/mathquiz.js"></script>
     <script src="../js folder/script.js"></script>
-   
-</body>
+  </body>
 </html>

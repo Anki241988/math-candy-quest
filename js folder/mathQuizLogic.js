@@ -1,56 +1,45 @@
-
-
 function Mathquiz() {
+  const operatorArray = ["+", "*", "-", "/"];
 
-const operatorArray=['+','*','-','/']
+  let randomOperator = Math.floor(Math.random() * operatorArray.length);
 
+  let operator = operatorArray[randomOperator];
+  let num1 = Math.floor(Math.random() * 50) + 1;
+  let num2 = Math.floor(Math.random() * 50) + 1;
 
+  let correctAnswer = 0;
 
-    let randomOperator = Math.floor(Math.random()*operatorArray.length);
+  if (num1 < num2) {
+    let bigger = num2;
+    num2 = num1;
+    num1 = bigger;
+  }
 
-let operator=operatorArray[randomOperator]
-let num1= Math.floor(Math.random()*50)+1;
-let num2=Math.floor(Math.random()*50)+1;
+  switch (operator) {
+    case "+":
+      correctAnswer = num1 + num2;
+      break;
 
-let correctAnswer =0;
+    case "-":
+      correctAnswer = num1 - num2;
+      break;
 
-if(num1<num2){
+    case "*":
+      correctAnswer = num1 * num2;
+      break;
 
-let bigger = num2
-num2=num1;
-num1=bigger;
+    case "/":
+      correctAnswer = Number((num1 / num2).toFixed(2));
+      break;
 
+    default:
+      break;
+  }
+
+  return {
+    Question: `${num1} ${operator} ${num2} =?`,
+    Answer: `${correctAnswer} `,
+  };
 }
 
-switch (operator) {
-
-  case "+":
-  correctAnswer = num1+num2;
-    break;
-
-  case "-":
-   correctAnswer =  num1-num2;
-    break;
-
-  case "*":
-   correctAnswer = num1*num2;
-    break;
-
-  case "/":
-correctAnswer = Number((num1 / num2).toFixed(2));
-    break;
-
-  default:
-    break;
-}
-
-
-
-return { Question:`${num1} ${operator} ${num2} =?`,
-         Answer: `${correctAnswer} `};
-
-}
-
-
-
-console.log(Mathquiz())
+console.log(Mathquiz());

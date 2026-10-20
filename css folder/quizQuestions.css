@@ -1,150 +1,132 @@
 #mathQuestions {
-
-    width:600px;
-    background-color: #D9F7EF;
-    height:200px;
-    top:620px;
-    position:absolute;
-    left:600px;
-   border-radius: 50px;
-   padding:20px;
-    font-weight: bolder;
-    font-size: 30px;
- border: 4px solid #168C80;
- text-align:center;
- color: #15594D;
- transition: opacity 2.5s ease-in-out;
+  width: 600px;
+  background-color: #d9f7ef;
+  height: 200px;
+  top: 620px;
+  position: absolute;
+  left: 600px;
+  border-radius: 50px;
+  padding: 20px;
+  font-weight: bolder;
+  font-size: 30px;
+  border: 4px solid #168c80;
+  text-align: center;
+  color: #15594d;
+  transition: opacity 2.5s ease-in-out;
 }
 
-
-#shopkeeperImage img{
-
-   position: absolute;
-    width: 500px;
-    height: 600px;  
- right: 34%;
-    bottom: 1%;
-    background-color: transparent;
-    transition: opacity 2.5s ease-in-out;
+#shopkeeperImage img {
+  position: absolute;
+  width: 500px;
+  height: 600px;
+  right: 34%;
+  bottom: 1%;
+  background-color: transparent;
+  transition: opacity 2.5s ease-in-out;
 }
 
-#questionText{
-display:inline-block;
-    width:200px;
-    height:auto;
-   text-align: center;
-   background-color: white;
-    color: #E85D3F;
-    border: 2px solid #168C80;
-    border-radius: 18px;
-  
-    font-size: 36px;
+#questionText {
+  display: inline-block;
+  width: 200px;
+  height: auto;
+  text-align: center;
+  background-color: white;
+  color: #e85d3f;
+  border: 2px solid #168c80;
+  border-radius: 18px;
+
+  font-size: 36px;
 }
 
-#answerText{
-
-    color:#E85D3F;
+#answerText {
+  color: #e85d3f;
 }
 
-.questionBlock{
-
-     font-size: 30px;
-    font-weight: bolder;
-    text-align: center;
-    margin-bottom: 15px;
-    background-color: transparent;
+.questionBlock {
+  font-size: 30px;
+  font-weight: bolder;
+  text-align: center;
+  margin-bottom: 15px;
+  background-color: transparent;
 }
-
 
 #boyQuizImage img {
-    position: absolute;
-    width: 270px;
-    height: 480px;
-    left: 12%;
-    bottom: 6%;
-    opacity: 1;
-  
+  position: absolute;
+  width: 270px;
+  height: 480px;
+  left: 12%;
+  bottom: 6%;
+  opacity: 1;
 }
 
-#speechBubbleboyQuizImage{
-
-    position: absolute;
-      background-color:#D9F7EF;
-    color: rgb(18, 68, 25);
-    border: 3px solid black;
-    border-radius: 35%;
-    padding: 20px;
-    width: 120px;
-    height:100px;
-    text-align: center;
-    font-weight: bold;
-left:22%;
-    top:62%;
-    font-size: 17px;
-     opacity: 0;
-   
-
+#speechBubbleboyQuizImage {
+  position: absolute;
+  background-color: #d9f7ef;
+  color: rgb(18, 68, 25);
+  border: 3px solid black;
+  border-radius: 35%;
+  padding: 20px;
+  width: 120px;
+  height: 100px;
+  text-align: center;
+  font-weight: bold;
+  left: 22%;
+  top: 62%;
+  font-size: 17px;
+  opacity: 0;
 }
-
- 
 
 #speechBubbleboyQuizImage::after {
-  content:'';
-    position: absolute;
+  content: "";
+  position: absolute;
 
-    width: 25px;
-    height: 25px;
+  width: 25px;
+  height: 25px;
 
-    background-color: #D9F7EF;
+  background-color: #d9f7ef;
 
- 
-    border-bottom: 3px solid black;
+  border-bottom: 3px solid black;
 
-    border-radius: 0 0 100% 0;
+  border-radius: 0 0 100% 0;
 
-    bottom: 12px;
-    left: -5px;
+  bottom: 12px;
+  left: -5px;
 
-    transform: rotate(45deg);
-    
+  transform: rotate(45deg);
 }
 
-
-#boyThinkingImage img{
- position: absolute;
-    width: 370px;
-    height: 480px;
-    left: 12%;
-    bottom: 6%;
-    opacity: 1;
-
-
+#boyThinkingImage img {
+  position: absolute;
+  width: 370px;
+  height: 480px;
+  left: 12%;
+  bottom: 6%;
+  opacity: 1;
 }
 
-#scoreboard{
-    position:absolute;
- width:240px;
- padding: 9px;
-    height:auto;
-   text-align: center;
-     background-color: #FFF1A8;
-    color: #8B3D70;
-    border: 2px solid #D94F91;
-    border-radius: 18px;
-  bottom:780px;
-    font-size: 36px;
-    left:220px;
-    font-weight: bold;
+#scoreboard {
+  position: absolute;
+  width: 240px;
+  padding: 9px;
+  height: auto;
+  text-align: center;
+  background-color: #fff1a8;
+  color: #8b3d70;
+  border: 2px solid #d94f91;
+  border-radius: 18px;
+  bottom: 780px;
+  font-size: 36px;
+  left: 220px;
+  font-weight: bold;
 }
-
 
 #candyFlossImage {
-    position: fixed;
-    width: 1500px;
-    height: auto;
-   left:30%;
-   top:1%;
-    bottom: 5%;
-    opacity: 0;
-    transition: opacity 2.5s ease-in-out;
+  position: fixed;
+  width: 1500px;
+  height: auto;
+  left: 30%;
+  top: 1%;
+  bottom: 5%;
+  opacity: 0;
+  transition: opacity 2.5s ease-in-out;
 }
