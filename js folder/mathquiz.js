@@ -19,6 +19,7 @@ answerText.textContent= randomQuestions.Answer;
 
 let score=0;
 let gameOver=false;
+let timer;
 function collectPoints(){
 
 score++
@@ -36,7 +37,7 @@ shopkeeperImage.style.opacity = 0;
         window.location.href = "./endGame.html";
     }, 6000);
 
-
+clearTimeout(timer);
 }
 }
 

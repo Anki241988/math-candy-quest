@@ -47,7 +47,7 @@ class Charachter {
       boyWalking.classList.add("walking");
     }, 1000);
 
-    boyWalking.addEventListener("animationend", (event) => {
+    boyWalking.addEventListener("animationend", () => {
       this.walking = false;
       boyWalking.style.opacity = 0;
 
@@ -160,7 +160,7 @@ playRound();
        boyThinkingImage.style.opacity=0;
               candyFlossImage.style.opacity=0;
 
-    nextQuestions();
+   nextQuestions();
      setTimeout(() => {
             shopkeeperImage.style.opacity = 1;
               mathQuestions.style.opacity = 1;
@@ -189,9 +189,17 @@ playRound();
   collectPoints();
             },14000)
 
-      setTimeout(() => {
-    playRound();
+    
+ 
+         timer=setTimeout(()=>{
+          if(!gameOver){
+playRound();
+          }
 }, 19000);
+
+
+       
+    
       
 
           }
