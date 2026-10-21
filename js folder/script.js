@@ -17,7 +17,7 @@ const gameStart = document.querySelector("#gameStart");
 
 if (gameStart) {
   gameStart.addEventListener("click", () => {
-    window.location.href = "./HTML folder/shopEnter.html";
+    window.location.href = "./shopEnter.html";
   });
 }
 //Background music plays continuously throughout the game.
