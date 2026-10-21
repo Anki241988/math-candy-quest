@@ -59,7 +59,10 @@ class Charachter {
       speechBubbleboyQuizImage.style.opacity = 0;
       boyThinkingImage.style.opacity = 0;
       scoreboard.style.opacity = 0;
+      userScoreboard.style.opacity=0;
       candyFlossImage.style.opacity = 0;
+       input.style.opacity=0;
+       summitButton.style.opacity=0;
       setTimeout(() => {
         duoImage.style.opacity = 1;
       }, 300);
@@ -85,7 +88,10 @@ class Charachter {
       speechBubble.style.opacity = 1;
       boyThinkingImage.style.opacity = 0;
       scoreboard.style.opacity = 0;
+       userScoreboard.style.opacity=0;
       candyFlossImage.style.opacity = 0;
+       input.style.opacity=0;
+       summitButton.style.opacity=0;
     }, 800);
 
     setTimeout(() => {
@@ -105,7 +111,10 @@ class Charachter {
     speechBubbleboyQuizImage.style.opacity = 0;
     boyThinkingImage.style.opacity = 0;
     scoreboard.style.opacity = 0;
+     userScoreboard.style.opacity=0;
     candyFlossImage.style.opacity = 0;
+     input.style.opacity=0;
+     summitButton.style.opacity=0;
     this.cartoonVoice();
 
     setTimeout(() => {
@@ -131,7 +140,10 @@ class Charachter {
     speechBubbleboyQuizImage.style.opacity = 0;
     boyThinkingImage.style.opacity = 0;
     scoreboard.style.opacity = 0;
+     userScoreboard.style.opacity=0;
     candyFlossImage.style.opacity = 0;
+     input.style.opacity=0;
+     summitButton.style.opacity=0;
     boyVoiceDuoConversation.play();
 
     boyVoiceDuoConversation.addEventListener("ended", () => {
@@ -146,12 +158,16 @@ class Charachter {
     speechBubbleShopkeeperDuoConversation.style.opacity = 1;
     boyVoiceDuoConversationBubble.style.opacity = 0;
     candyFlossImage.style.opacity = 0;
+     input.style.opacity=0;
+     summitButton.style.opacity=0;
     speechBubbleShopkeeperDuoConversationVoice.play();
 
     setTimeout(() => {
       speechBubbleShopkeeperDuoConversation.style.opacity = 0;
       duoImage.style.opacity = 0;
       candyFlossImage.style.opacity = 0;
+       input.style.opacity=0;
+        userScoreboard.style.opacity=1;
       playRound();
     }, 7500);
 
@@ -160,14 +176,19 @@ class Charachter {
       speechBubbleboyQuizImage.style.opacity = 0;
       boyThinkingImage.style.opacity = 0;
       candyFlossImage.style.opacity = 0;
+       input.style.opacity=1;
+       summitButton.style.opacity=1;
+        userScoreboard.style.opacity=1;
 
       nextQuestions();
       setTimeout(() => {
         shopkeeperImage.style.opacity = 1;
         mathQuestions.style.opacity = 1;
         candyFlossImage.style.opacity = 0;
-
+ input.style.opacity=1;
+ summitButton.style.opacity=1;
         scoreboard.style.opacity = 1;
+         userScoreboard.style.opacity=1;
       }, 2000);
 
       setTimeout(() => {
@@ -175,6 +196,9 @@ class Charachter {
         speechBubbleboyQuizImage.style.opacity = 1;
         boyQuizImage.style.opacity = 1;
         candyFlossImage.style.opacity = 0;
+        input.style.opacity=1;
+        summitButton.style.opacity=1;
+         userScoreboard.style.opacity=1;
       }, 12000);
 
       setTimeout(() => {
