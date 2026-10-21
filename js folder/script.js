@@ -167,7 +167,7 @@ class Charachter {
       duoImage.style.opacity = 0;
       candyFlossImage.style.opacity = 0;
        input.style.opacity=0;
-        userScoreboard.style.opacity=1;
+        userScoreboard.style.opacity=0;
       playRound();
     }, 7500);
 
@@ -176,9 +176,9 @@ class Charachter {
       speechBubbleboyQuizImage.style.opacity = 0;
       boyThinkingImage.style.opacity = 0;
       candyFlossImage.style.opacity = 0;
-       input.style.opacity=1;
-       summitButton.style.opacity=1;
-        userScoreboard.style.opacity=1;
+       input.style.opacity=0;
+       summitButton.style.opacity=0;
+        userScoreboard.style.opacity=0;
 
       nextQuestions();
       setTimeout(() => {
