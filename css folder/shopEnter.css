@@ -23,7 +23,7 @@
   background-color: transparent;
   background-color: transparent;
 
-  background-image: url("./assets/images/Candy\ Shop\ Welcome\ Duo.png");
+  background-image: url("../assets/images/Candy\ Shop\ Welcome\ Duo.png");
   transition: opacity 1.5s ease-in-out;
 }
 
@@ -36,7 +36,7 @@
   opacity: 1;
   transform: translateX(-150px);
   overflow: hidden;
-  background-image: url("./assets/images/Cheerful\ Boy\ Walking\ with\ Backpack.png");
+  background-image: url("../assets/images/Cheerful\ Boy\ Walking\ with\ Backpack.png");
   transition: opacity 0.6s ease-in-out;
   background-color: transparent;
 }
@@ -44,7 +44,7 @@
 .boy-sprite {
   width: 190px;
   height: 507px;
-  background-image: url("./assets/images/Eight-Frame\ Walking\ Boy\ Sprite\ Sheet.png");
+  background-image: url("../assets/images/Eight-Frame\ Walking\ Boy\ Sprite\ Sheet.png");
   background-repeat: no-repeat;
   background-size: 1520px 507px;
  
