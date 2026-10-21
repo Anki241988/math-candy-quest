@@ -112,8 +112,6 @@ Through this project, I practiced:
 
 ## 🔮 Future Improvements
 
-- 🎮 Allow players to enter their own answers
-- ✅ Validate answers before awarding points
 - 📊 Introduce difficulty levels
 - ⏳ Add a countdown timer
 - 📱 Improve mobile responsiveness
